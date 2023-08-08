@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rayhan Zanzabila's Portfolio</title>
+    <link rel="stylesheet" href="projects.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <div class="nav-left">
+            <ul>
+                <li class="item-collapse">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="item-collapse">
+                    <a class="active" href="projects.html">My Projects</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <div>
+                <div class="item-collapse">
+                    <span>Dark Theme</span>
+                    <label class="switch">
+                        <input type="checkbox" onclick="switchMode()" id="cb1">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+
+                <div id="hamburger-menu">
+                    <button onclick="openHamburger()">
+                        <i class="fa-2x fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hamburger-nav hamburger-hidden" id="hamburger-nav">
+        <a href="index.html">Home</a>
+        <a href="projects.html" class="hamburger-active">My Projects</a>
+        <div>
+            <span>Dark Theme</span>
+            <label class="switch">
+                <input type="checkbox" onclick="switchMode()" id="cb2">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="grid-container" id="grid-container">
+
+            <div class="project-item" id="item-1">
+                <img class="item-img" src="images/img1.png"/>
+                <div class="item-title">Project Title Here</div>
+                <p>Project description</p>
+                <div class="item-tools" id="item-tools">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Kotlin_Icon.png" alt="Kotlin"/>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg" alt="HTML5"/>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS"/>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Go_Logo_Blue.svg" alt="Golang"/>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python"/>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Javascript_Logo.png" alt="Javascript"/>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Text-xml.svg" alt="XML"/>
+                    <img src="https://static.bokeh.org/branding/icons/bokeh-icon.svg" alt="Bokeh"/>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/182px-Java_programming_language_logo.svg.png" alt="Java"/>
+                    <img src="https://1000logos.net/wp-content/uploads/2020/08/MySQL-Logo.png" alt="MySQL" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg" alt="PostgreSQL" />
+                    <!-- 
+                        <div class="tooltip">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Kotlin_Icon.png" alt="Kotlin"/>
+                        <span class="tooltip-text">Kotlin</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg" alt="HTML5"/>
+                        <span class="tooltip-text">HTML</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS"/>
+                        <span class="tooltip-text">CSS</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Go_Logo_Blue.svg" alt="Golang"/>
+                        <span class="tooltip-text">Golang</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python"/>
+                        <span class="tooltip-text">Python</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Javascript_Logo.png" alt="Javascript"/>
+                        <span class="tooltip-text">Javascript</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Text-xml.svg" alt="XML"/>
+                        <span class="tooltip-text">XML</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="https://static.bokeh.org/branding/icons/bokeh-icon.svg" alt="Bokeh"/>
+                        <span class="tooltip-text">Bokeh</span>
+                    </div>
+                    -->
+                </div>
+            </div>
+
+            <div class="project-item" id="item-2">
+                <img class="item-img" src="images/img2.png" />
+                <div class="item-title">Project Title Here</div>
+                <p>Project description</p>
+            </div>
+
+            <div class="project-item" id="item-3">
+                <img class="item-img" src="images/img3.png" />
+                <div class="item-title">Project Title Here</div>
+                <p>Project description</p>
+            </div>
+
+            <div class="project-item" id="item-4">
+                <img class="item-img" src="images/img2.png" />
+                <div class="item-title">Project Title Here</div>
+                <p>Project description</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal" id="myModal">
+        <div class="modal-content" id="modal-content">
+            
+            <span class="close">&times;</span>
+            <h1>Project Name</h1>
+
+            <div class="slideshow-and-tools">
+
+                <div class="slideshow-side">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <img src="images/img1.png"/>
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="images/img2.png"/>
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="images/img3.png"/>
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    <div class="dots">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+
+                <div class="tools-detail">
+                    <h2>Tools used</h2>
+                    <div class="tools-grid" id="tools-grid">
+                        <div class="tools-grid-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Kotlin_Icon.png" alt="Kotlin" />
+                            <div>Kotlin</div>
+                        </div>
+                        <div class="tools-grid-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg" alt="HTML5" />
+                            <div>HTML</div>
+                        </div>
+                        <div class="tools-grid-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS" />
+                            <div>CSS</div>
+                        </div>
+                        <div class="tools-grid-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Go_Logo_Blue.svg" alt="Golang" />
+                            <div>Golang</div>
+                        </div>
+                        <div class="tools-grid-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python" />
+                            <div>Python</div>
+                        </div>
+                        <div class="tools-grid-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Javascript_Logo.png" alt="Javascript" />
+                            <div>Javascript</div>
+                        </div>
+                        <div class="tools-grid-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Text-xml.svg" alt="XML" />
+                            <div>XML</div>
+                        </div>
+                        <div class="tools-grid-item">
+                            <img src="https://static.bokeh.org/branding/icons/bokeh-icon.svg" alt="Bokeh" />
+                            <div>Bokeh</div>
+                        </div>
+                        <div class="tools-grid-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/182px-Java_programming_language_logo.svg.png" alt="Java"/>
+                            <div>Java</div>
+                        </div>
+                        <div class="tools-grid-item">
+                            <img src="https://1000logos.net/wp-content/uploads/2020/08/MySQL-Logo.png" alt="MySQL"/>
+                            <div>MySQL</div>
+                        </div>
+                        <div class="tools-grid-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg" alt="PostgreSQL"/>
+                            <div>PostgreSQL</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <p>text</p>
+
+            <p>
+                <a class="github-link" href="" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                    <span>Click to see the source code</span>
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="projects.js"></script>
+</body>
+
+</html>

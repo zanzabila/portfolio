@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    transition: .4s;
+}
+
+body {
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    transition: .4s;
+}
+
+.dark-mode {
+    background-color: #121212;
+}
+
+.dark-mode * {
+    color: whitesmoke;
+}
+
+.dark-mode .hamburger-nav>* {
+    color: whitesmoke !important;
+    background-color: rgb(31, 54, 54) !important;
+}
+
+.dark-mode .grid-container .project-item {
+    background-color: #414141 !important;
+    box-shadow: 0 0 8px black !important;
+}
+
+.dark-mode .modal-content {
+    background-color: #414141;
+}
+
+.main-content {
+    margin-top: 4em;
+    padding: 2em;
+}
+
+/* Navigation bar */
+
+nav {
+    background-color: cadetblue;
+    display: flex;
+    align-items: center;
+    height: 64px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.nav-left {
+    height: 100%;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: .4s;
+}
+
+nav ul li:hover {
+    background-color: rgb(61, 102, 103);
+}
+
+nav ul li:hover a {
+    color: whitesmoke !important;
+}
+
+nav ul li a {
+    padding: 1.4em 1em;
+    color: black !important;
+    font-size: 1.2em;
+    z-index: 1;
+}
+
+nav ul li .active {
+    font-weight: bold;
+}
+
+.nav-right {
+    text-align: end;
+    margin-right: 2em;
+    margin-left: auto;
+}
+
+.nav-right>div {
+    display: flex;
+}
+
+.nav-right>div>div {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right>div>div+div {
+    margin-left: 2em;
+}
+
+.nav-right>div>div>span {
+    margin-right: .5em;
+    color: black !important;
+}
+
+.nav-right button {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-right button i {
+    color: black !important;
+    transition: .4s;
+}
+
+.nav-right button:hover i {
+    color: whitesmoke !important;
+}
+
+/* Mobile navigation */
+
+#hamburger-menu {
+    display: none;
+}
+
+.hamburger-nav {
+    font-size: 1.2em;
+    list-style-type: none;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 64px;
+    width: 100%;
+    opacity: 1;
+    -webkit-transition: opacity .4s;
+    transition: opacity .4s;
+}
+
+.hamburger-nav>* {
+    color: black !important;
+    background-color: rgb(145, 195, 197);
+    display: flex;
+    align-items: center;
+    padding: 1em;
+}
+
+.hamburger-nav div>span {
+    margin-right: .5em;
+}
+
+.hamburger-nav .hamburger-active {
+    font-weight: bold;
+}
+
+body .hamburger-hidden {
+    opacity: 0 !important;
+}
+
+/* Switch */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: rgb(61, 102, 103);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px rgb(61, 102, 103);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Buttons */
+
+.contacts a+a {
+    margin-left: .5em;
+}
+
+.contacts a i {
+    font-size: 2em;
+    transition: .4s;
+}
+
+.contacts a i:hover {
+    color: cadetblue;
+}
+
+/* Responsive layout */
+
+@media only screen and (max-width: 700px) {
+    .item-collapse {
+        display: none !important;
+    }
+
+    #hamburger-menu {
+        display: block;
+    }
+}
+
+/* Other styling */
+
+.description a {
+    text-decoration: underline dotted cadetblue;
+}
+
+.description a:hover {
+    background-color: cadetblue;
+    color: whitesmoke;
+}
