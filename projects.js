@@ -194,7 +194,7 @@ function createData() {
         name: "COVID Info",
         desc: "COVID Info is a bokeh application that displays interactive diagrams about COVID cases in Indonesia.",
         details: "<p>COVID Info is a bokeh application that displays interactive diagrams about COVID cases in Indonesia.</p><p>The first tab shows a summary of Indonesia's population, divided by main islands. Each main island shows the minimum, median, and maximum population of its provinces.</p><p>The second tab shows the number of COVID cases, also divided like the first tab.</p><p>The third tab shows an interactive diagram of COVID cases throughout March 2020. User can toggle each bar and line to focus more on the others. User can also pan and zoom in the diagram. Hovering over a bar will show the details of cases in that day.</p><p>The fourth tab shows another interactive diagram, specifically a scatter plot between number of cases and population density of each provinces. Hovering over a dot will show the details of said province.</p>",
-        images: ["covid_03.png", "covid_02.png", "covid_01.png", "covid_04.png"],
+        images: ["covid_03.png", "covid_01.png", "covid_02.png", "covid_04.png"],
         tools: ["Python", "Bokeh"],
         github: "https://github.com/zanzabila/visdat-project/blob/46554d2fad8afc01d7c15d5521be2b1d3cba2c71/COVIDinfo.py"
     };
