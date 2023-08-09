@@ -370,6 +370,15 @@ input:checked+.slider:before {
     margin-top: 2em;
 }
 
+.modal-content > p > a {
+    text-decoration: underline dotted cadetblue;
+}
+
+.modal-content > p > a:hover {
+    background-color: cadetblue;
+    color: whitesmoke;
+}
+
 /* Tooltip */
 
 /* .tooltip {
