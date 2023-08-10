@@ -20,12 +20,12 @@ function openHamburger() {
     let hamburger = document.getElementById("hamburger-nav");
     if (hamburgerIsOpen) {
         hamburger.classList.add("hamburger-hidden");
-        hamburgerIsOpen = false;
         setTimeout(closingHamburger, 400);
+        hamburgerIsOpen = false;
     } else {
         hamburger.style.display = "block";
-        hamburgerIsOpen = true;
         setTimeout(openingHamburger, 400);
+        hamburgerIsOpen = true;
     }
 }
 
