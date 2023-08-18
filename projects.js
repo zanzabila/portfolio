@@ -181,8 +181,8 @@ function createData() {
         github: "https://github.com/zanzabila/growthy"
     };
 
-    const projectBlog = {
-        name: "Project Blog",
+    const projectRepo = {
+        name: "Project Repository",
         desc: "This is a web app that shows a list of projects the users have done.",
         details: "<p>This is a web app that shows a list of projects the users have done.</p><p>Some of its features are as follows.</p><ul><li>Creating an account.</li><li>Logging into a previously created account.</li><li>Contacting the site owner.</li><li>Adding a new project (can only be done by logged in users).</li><li>Editing a previously created project (can only be done by the project owner).</li><li>Deleting a previously created project (can only be done by the project owner).</li></ul>",
         images: ["projectBlog_01.png", "projectBlog_02.png", "projectBlog_03.png", "projectBlog_04.png", "projectBlog_05.png", "projectBlog_06.png", "projectBlog_07.png", "projectBlog_08.png", "projectBlog_09.png"],
@@ -209,7 +209,7 @@ function createData() {
     };
 
     projectData.push(growthy);
-    projectData.push(projectBlog);
+    projectData.push(projectRepo);
     projectData.push(covidInfo);
     projectData.push(restoManager);
 }
