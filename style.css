@@ -265,6 +265,21 @@ input:checked+.slider:before {
     }
 }
 
+/* JavaScript warning */
+
+.js-warning {
+    margin-top: 4em;
+    background-color: #f3dfe0;
+    border: 1px solid #b3413e;
+    border-radius: 8px;
+    padding: 1em;
+}
+
+.js-warning p {
+    font-weight: bold;
+    color: #b3413e;
+}
+
 /* Other styling */
 
 .description a {
