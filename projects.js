@@ -62,6 +62,12 @@ function addToolsInCard(projectTools) {
             case "PostgreSQL":
                 s += `<img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg" alt="PostgreSQL" />`;
                 break;
+            case "NetBeans":
+                s += `<img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" alt="NetBeans" />`;
+                break;
+            case "Android Studio":
+                s += `<img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Android_Studio_icon_%282020%29.svg" alt="Android Studio" />`;
+                break
             default:
                 break;
         }
@@ -163,6 +169,22 @@ function addToolsInModal(projectTools) {
                     </div>
                 `;
                 break;
+            case "NetBeans":
+                s += `
+                    <div class="tools-grid-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" alt="NetBeans" />
+                        <div>NetBeans</div>
+                    </div>
+                `;
+                break;
+            case "Android Studio":
+                s += `
+                    <div class="tools-grid-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Android_Studio_icon_%282020%29.svg" alt="Android Studio" />
+                        <div>Android Studio</div>
+                    </div>
+                `;
+                break;
             default:
                 break;
         }
@@ -177,7 +199,7 @@ function createData() {
         desc: "Growthy is a mobile app used by parents to monitor a child's growth, development, and mentality.",
         details: "<p>Growthy is an app used by parents to monitor a child's growth, development, and mentality. It was made by a team of three programmers with the guidance of my university professor and an expert in medical field.</p><p>Some of its features are as follows.</p><ul><li>Show information about children's growth, development, and mentality.</li><li>Provide tests to see whether a child is healthy.</li><li>Show compilation of past test results.</li></ul><p>I was in charge of writing the code, while the two other programmers on the team were in charge of designing the general application flow and compiling the information needed from the reference provided by the medical expert.</p>",
         images: ["growthy_01.png", "growthy_02.png", "growthy_03.png", "growthy_04.png", "growthy_05.png", "growthy_06.png", "growthy_07.png", "growthy_08.png", "growthy_09.png"],
-        tools: ["Kotlin", "XML"],
+        tools: ["Android Studio", "Kotlin", "XML"],
         github: "https://github.com/zanzabila/growthy"
     };
 
@@ -204,7 +226,7 @@ function createData() {
         desc: "This app is a Java GUI application that is used to manage a restaurant.",
         details: "<p>This app is a Java GUI application that is used to manage a restaurant.</p><p>It was made by three people, including me, to be used by restaurant staff. Some of its features are as follows.</p><ul><li>Make an order.</li><li>Confirm that a dish was ready to be served.</li><li>Confirm that every dishes of a table is served.</li><li>Calculate payment.</li><li>See a brief summary of the restaurant's profit.</li></ul>",
         images: ["resto_01.png", "resto_02.png", "resto_03.png", "resto_04.png", "resto_05.png", "resto_06.png"],
-        tools: ["Java", "MySQL"],
+        tools: ["NetBeans", "Java", "MySQL"],
         github: "https://github.com/zanzabila/TubesPBO"
     };
 
